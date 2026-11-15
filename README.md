@@ -1,10 +1,20 @@
 # Garage Banana 01
 
-The current Garage Banana design, CAD, MuJoCo model and complete interactive website, together in **thisisformuchfun/Banana-bot**.
+## Repository recovery status
 
-[Live website](https://garage-banana-engineering.stevengineer.chatgpt.site/) · [Engineering snapshot](docs/ENGINEERING_SNAPSHOT.md) · [CAD assembly](cad/Garage_Banana_R2_Study.step) · [Current model](simulation/banana.xml) · [BOM](engineering/bom.json)
+**Verified on 2026-11-15:** the `main` branch contains only this README. The CAD, simulation, engineering, website, tests, reference images, and license files described below have **not yet been imported into this repository**. The branch list contains only `main`, and there are no open pull requests.
 
-<img src="references/approved-id.png" alt="Approved Garage Banana industrial design: yellow banana shell, inset LCD face, articulated limbs and white gloves." width="420">
+**Do not use GitHub's “Download ZIP” as the project download yet:** it currently contains only this README. The commands below cannot run from this checkout, and the listed local paths are recovery targets, not available files.
+
+The prior README is preserved below as a **historical recovery reference**, not as a verified inventory or validation report. Its dimensions, costs, hashes, simulation results, provenance, licensing statements, and claims of included files have not been independently verified in this documentation correction. Verify them against recovered source files before relying on them. An existing hosted website is separate from this repository; its current contents were not checked in this correction.
+
+## Historical recovery reference (unverified; import pending)
+
+Intended recovery scope: the Garage Banana design, CAD, MuJoCo model and interactive website for **thisisformuchfun/Banana-bot**.
+
+[Live website](https://garage-banana-engineering.stevengineer.chatgpt.site/) · Engineering snapshot (`docs/ENGINEERING_SNAPSHOT.md`, import pending) · CAD assembly (`cad/Garage_Banana_R2_Study.step`, import pending) · Current model (`simulation/banana.xml`, import pending) · BOM (`engineering/bom.json`, import pending)
+
+Approved industrial-design image: `references/approved-id.png` (import pending).
 
 ## Start with this robot
 
@@ -24,7 +34,7 @@ This import preserves the current design. It does not transfer a trained policy 
 | Delivered planning estimate | $13,745.78 against a $10,000 ceiling |
 | Current gait transfer | Falls at 4.961 s and 8.781 s in the two saved tests |
 
-These are engineering-review files, not a fabrication release. See the [mechanical audit](engineering/MECHANICAL_AUDIT.md) and [simulation notes](docs/SIMULATION.md) for the checked scope and open issues.
+These are engineering-review files, not a fabrication release. See the mechanical audit (`engineering/MECHANICAL_AUDIT.md`, import pending) and simulation notes (`docs/SIMULATION.md`, import pending) for the checked scope and open issues.
 
 ## Run the current model
 
@@ -65,7 +75,7 @@ Website source snapshot: `1c3cfd15094bfc2e5fa2e2aeab78fba5b2ffe8c9`. The existin
 
 ## Rebuild and check
 
-Delivered geometry is included. Install `engineering/requirements.txt` and follow the ordered rebuild commands in [the engineering snapshot](docs/ENGINEERING_SNAPSHOT.md#cad-and-rebuilding), from the repository root. Regeneration changes CAD, manifests and audit hashes; rerun dependent checks. The optional manufacturer-CAD comparison requires a separately obtained STEP supplied with `--vendor-step`.
+Delivered geometry is included. Install `engineering/requirements.txt` and follow the ordered rebuild commands in the engineering snapshot (`docs/ENGINEERING_SNAPSHOT.md#cad-and-rebuilding`, import pending), from the repository root. Regeneration changes CAD, manifests and audit hashes; rerun dependent checks. The optional manufacturer-CAD comparison requires a separately obtained STEP supplied with `--vendor-step`.
 
 ```bash
 python engineering/verify_review.py
@@ -73,9 +83,9 @@ python simulation/test_ik.py
 node --test tests/asset-loader.test.mjs
 ```
 
-Fixed-base IK does not prove balance or walking. Historical gait results and film telemetry retain their original model identities. [Import provenance](docs/REPOSITORY_IMPORT.json) records this transfer's sources and checks.
+Fixed-base IK does not prove balance or walking. Historical gait results and film telemetry retain their original model identities. Import provenance (`docs/REPOSITORY_IMPORT.json`, import pending) records this transfer's sources and checks.
 
 ## Licensing and attribution
 
-Original character supplied by Stephen Shaffer. RoboParty-derived hardware uses [CERN-OHL-W-2.0](LICENSE-HARDWARE); newly authored software uses [MIT](LICENSE-SOFTWARE). Upstream policy, code, browser libraries and printer assets retain their own notices. Read [SOURCE_NOTICES.md](SOURCE_NOTICES.md), notices under `sources/`, and website asset provenance. No private credentials or external vendor CAD were added.
+Original character supplied by Stephen Shaffer. RoboParty-derived hardware uses CERN-OHL-W-2.0 (`LICENSE-HARDWARE`, import pending); newly authored software uses MIT (`LICENSE-SOFTWARE`, import pending). Upstream policy, code, browser libraries and printer assets retain their own notices. Read SOURCE_NOTICES.md (`SOURCE_NOTICES.md`, import pending), notices under `sources/`, and website asset provenance. No private credentials or external vendor CAD were added.
 
